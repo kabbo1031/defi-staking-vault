@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DeFi Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>🏦 DeFi Staking Vault</h1>
+        
+        <div class="wallet-section">
+            <button id="connectBtn">Connect Wallet</button>
+            <p>Wallet Balance: <span id="walletBal">0.0</span> MCK</p>
+            <p>Staked Balance: <span id="stakedBal">0.0</span> MCK</p>
+        </div>
+
+        <div class="action-card">
+            <input type="number" id="amountInput" placeholder="Amount to Stake/Withdraw">
+            
+            <div class="button-group">
+                <button id="approveBtn" class="secondary">1. Approve Token</button>
+                <button id="stakeBtn" class="primary" disabled>2. Stake</button>
+            </div>
+            
+            <hr>
+            <button id="withdrawBtn" class="danger">Withdraw Funds</button>
+        </div>
+
+        <div id="status">Wait for connection...</div>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
