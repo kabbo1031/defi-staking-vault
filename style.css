@@ -1,0 +1,57 @@
+body {
+    background-color: #f0f9ff;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #0f172a;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.app-container {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 { text-align: center; color: #0284c7; }
+
+.wallet-section {
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.primary { background: #0ea5e9; color: white; }
+.secondary { background: #94a3b8; color: white; }
+.danger { background: #ef4444; color: white; margin-top: 20px; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+#status {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #64748b;
+}
